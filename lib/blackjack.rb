@@ -8,7 +8,7 @@ def deal_card
   rand(1...11)
 end
 
-def display_card_total(number)
+def display_card_total(card_total)
   # code #display_card_total here
 puts  "Your cards add up to #{card_total}"
 end
@@ -33,17 +33,32 @@ def initial_round
   a = deal_card
   b = deal_card
   display_card_total = a + b
-  puts display_card_total
-  display_card_total
+   puts display_card_total
+   display_card_total
+  
 end
 
-def hit?(number)
+def hit?(card_total)
   # code hit? here
+  prompt_user
+  user_input  = get_user_input 
+  
+  if user_input == "h"
+    card_total += deal_card
+  elsif
+    user_input == "s"
+    card_total
+   else
+     invalid_command
+
 end
 
 def invalid_command
   # code invalid_command here
+  puts "Please enter a valid command"
 end
+
+
 
 #####################################################
 # get every test to pass before coding runner below #
