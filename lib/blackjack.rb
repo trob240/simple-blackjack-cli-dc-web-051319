@@ -40,7 +40,7 @@ def hit?(card_total)
   prompt_user
   n  = get_user_input 
   
-    while (n!== "h")
+    while (n != "h" || n!= "s")
     invalid_command
      prompt_user
   end
