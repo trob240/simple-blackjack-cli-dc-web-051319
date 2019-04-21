@@ -71,5 +71,5 @@ until card_total > 21
   a = hit?(card_total)
   card_total = a
 end
-  end_game
+  end_game(card_total)
 end
