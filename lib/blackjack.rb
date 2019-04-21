@@ -35,11 +35,10 @@ display_card_total(card_total)
 card_total
 end
 
-def hit?(display_card_total)
+def hit?(card_total)
   # code hit? here
   prompt_user
   user_input  = get_user_input 
-  card_total = display_card_total
   
   if user_input == "h"
     card_total += deal_card
